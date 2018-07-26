@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prime Number Determinator</title>
+</head>
+<body>
+    <script>
+    var a = prompt("Input Number");
+    var b = Number(a);
+    if(b%2 === 0){
+        document.write(b + " is not a prime number");
+    }
+    else if(b === 2){
+                document.write(b + " is a prime number");
+            }
+    else if(b === 3){
+                document.write(b + " is a prime number");
+            }
+    else {
+        for(var i = 3; i<b; i+=2){
+            if(b%i === 0){
+                document.write(b + " is not a prime number");
+                break;
+            }
+            else{
+                document.write(b + " is a prime number");
+                break;
+            }
+        }
+    
+    }
+    </script>
+</body>
+</html>
