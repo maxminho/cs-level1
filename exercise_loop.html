@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        document.write("This returns the number of inputs, and the sum of all the inputs" + "<br>");
+        var counter = 0;
+        var sum = 0;
+        var input = prompt("Input a number! If you want to quit, enter 0 ")
+        while(Number(input) != 0){
+        
+        sum = sum + Number(input);
+        counter = counter +1;
+        input = prompt("Enter a number again");
+        }
+        document.write("Number of inputs : "+counter+"<br>");
+        document.write("Sum of inputs : "+sum);
+       /* if(numberInput != 0){
+            counter += 1;
+            sum += numberInput;
+            input = prompt("Input another number, or input 0 to quit");
+        }
+        else if(numberInput === 0){
+            document.write("Number of Inputs : " + counter);
+            console.log("Number of Inputs : " + counter);
+            document.write("Sum of Inputs : " + sum);
+            console.log("Sum of Inputs : " + sum);
+        }*/
+        </script>
+    </body>
+</html>
